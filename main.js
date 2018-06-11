@@ -9,8 +9,8 @@ function calcabc(h0,h1,h2,i){
   calculator.setExpression({id:i, latex:eq});
 }
 function run(){
-  h = 0.4
-  amount = 64
+  h = 0.2
+  amount = 16
   for (i = 0; i < 2*amount;i+=2){calculator.setExpression({id:i, latex:""});}
   for (i = 0; i < 2*amount;i+=2){
     if (document.getElementById("selFunction").value == "cos(x)"){
@@ -32,3 +32,4 @@ function run(){
     calcabc(h0,h1,h2,i)
   }
 }
+run()
